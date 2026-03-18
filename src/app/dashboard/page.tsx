@@ -113,7 +113,9 @@ export default function DashboardPage() {
             <div className="space-y-4">
               {recentActivity.map((activity, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="h-8 w-8 shrink-0 rounded-full bg-gradient-to-br from-primary/60 to-purple-500/60" />
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary/60 to-purple-500/60 text-[10px] font-bold text-white">
+                    {activity.user.split(" ").map((n) => n[0]).join("")}
+                  </div>
                   <div className="flex-1 space-y-0.5">
                     <p className="text-sm font-medium">{activity.user}</p>
                     <p className="text-xs text-muted-foreground">

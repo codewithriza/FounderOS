@@ -60,7 +60,9 @@ export function Testimonials() {
 
                 {/* Author */}
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary/60 to-purple-500/60" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary/60 to-purple-500/60 text-xs font-bold text-white">
+                    {testimonial.name.split(" ").map((n) => n[0]).join("")}
+                  </div>
                   <div>
                     <p className="text-sm font-semibold">{testimonial.name}</p>
                     <p className="text-xs text-muted-foreground">

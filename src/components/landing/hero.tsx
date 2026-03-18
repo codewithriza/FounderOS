@@ -80,11 +80,19 @@ export function Hero() {
           <FadeIn delay={0.4}>
             <div className="mt-12 flex flex-col items-center gap-4">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4, 5].map((i) => (
+                {[
+                  { initials: "SC", from: "from-violet-500", to: "to-purple-600" },
+                  { initials: "MJ", from: "from-blue-500", to: "to-cyan-500" },
+                  { initials: "ER", from: "from-pink-500", to: "to-rose-500" },
+                  { initials: "DK", from: "from-amber-500", to: "to-orange-500" },
+                  { initials: "LW", from: "from-emerald-500", to: "to-green-500" },
+                ].map((avatar, i) => (
                   <div
                     key={i}
-                    className="h-8 w-8 rounded-full border-2 border-background bg-gradient-to-br from-primary/60 to-purple-500/60"
-                  />
+                    className={`flex h-8 w-8 items-center justify-center rounded-full border-2 border-background bg-gradient-to-br ${avatar.from} ${avatar.to} text-[10px] font-bold text-white`}
+                  >
+                    {avatar.initials}
+                  </div>
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
