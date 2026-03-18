@@ -11,21 +11,20 @@ const footerLinks = {
     { label: "Blog", href: "/blog" },
   ],
   company: [
-    { label: "About", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Press", href: "#" },
+    { label: "About", href: "#features" },
+    { label: "GitHub", href: "https://github.com/codewithriza/FounderOS" },
+    { label: "Twitter", href: "https://twitter.com/codewithriza" },
+    { label: "Contact", href: "mailto:codewithriza@gmail.com" },
   ],
   resources: [
-    { label: "Documentation", href: "#" },
-    { label: "Changelog", href: "#" },
-    { label: "Contributing", href: "#" },
-    { label: "License", href: "#" },
+    { label: "Documentation", href: "/blog/getting-started-with-founderos" },
+    { label: "Contributing", href: "https://github.com/codewithriza/FounderOS/blob/main/CONTRIBUTING.md" },
+    { label: "Changelog", href: "https://github.com/codewithriza/FounderOS/releases" },
+    { label: "License", href: "https://github.com/codewithriza/FounderOS/blob/main/LICENSE" },
   ],
   legal: [
-    { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
-    { label: "Cookies", href: "#" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Service", href: "/terms" },
   ],
 };
 
